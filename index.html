@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" ng-app="agendaApp">
    <head>
-      <title>AngularJs - Agenda de contato</title>
+      <title>AngularJs - Agenda de contato | Claudio Alexssandro Lino</title>
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,13 +11,13 @@
       <link rel="stylesheet" href="assets/css/style.css">
       
    </head>
-   <body ng-app="appAgendaAngular">
+   <body ng-controller="cecMainController as vmMain">
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-blue">
-         <a class="navbar-brand" href="javascript:void(0)" id="menu-toggle">AngularJS - Agenda de contato</a>
+         <a class="navbar-brand" href="javascript:void(0)" id="menu-toggle">{{vmMain.translate.TITULO_PROJETO}}</a>
       </nav>
       <main id="container-main" class="container-fluid">
          <div class="row">
-            <div id="conteudo-esquerdo" class="col-md-8">
+            <div id="conteudo-esquerdo" class="col-md-8" ng-controller="cecTableContactController as vm">
                <div class="row">
                   <article id="tbl-lista " class="col-md-12">
                      <div class="card">
@@ -25,50 +25,34 @@
                            <h2>Lista de contatos</h2>
                         </div>
                         <div class="card-body">
-                           <form class="form-group clearfix">
-                              <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                                 <div class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></div>
-                                 <input type="text" class="form-control" id="search-reg" placeholder="Quem você deseja encontrar?">
-                              </div>
-                           </form>
-                           <table class="table table-hover">
-                              <thead>
-                                 <tr>
-                                    <th class="hover_order" >Nome completo</th>
-                                    <th class="hover_order" >Email</th>
-                                    <th class="hover_order" >Estado</th>
-                                    <th width="160" class="text-center">Ações</th>
-                                 </tr>
-                              </thead>
-                              <tbody>
-                                 <tr >
-                                    <td>Claudio Alexssandro Lino</td>
-                                    <td>codigosecafe@gmail.com</td>
-                                    <td>Paraná</td>
-                                    <td class="text-center">
-                                       <div class="btn-group" role="group" aria-label="Ações user">
-                                          <button type="button" class="btn btn-info text-center">
-                                             <i class="fa fa-pencil" aria-hidden="true"></i>
-                                          </button>
-                                          <button type="button" class="btn btn-secondary text-center">
-                                             <i class="fa fa-trash" aria-hidden="true"></i>
-                                          </button>
-                                       </div>
-                                    </td>
-                                 </tr>
-                                 <tr>
-                                    <td colspan="4" class="text-center">
-                                       <h5>Nenhum registro encontrado</h5>
-                                    </td>
-                                 </tr>
-                              </tbody>
-                           </table>
+                           
+                           
+                           <cec-table-contact  contacts='vm.listContact' >
+
+                              <button type="button" class="btn btn-info text-center">
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                             </button>
+                             <button type="button" class="btn btn-secondary text-center">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                              </button>
+
+                           </cec-table-contact>
+
+
                            <div ></div>
                         </div>
                      </div>
                   </article>
                   <!-- ### Final da div tbl-cadastros ### --> 
+
                </div>
+
+               <div class="row">
+                  <div class="col-md-12">
+                     CAMPO DE TESTE
+                    
+                  </div>
+               </div><!-- /.row final linha -->
                <!-- /.row final linha -->
                <!-- Modal Deletar Registro -->
                <div class="modal fade" id="modalDeleteReg" tabindex="-1" role="dialog" aria-labelledby="modalDeleteRegLabel" aria-hidden="true">
@@ -236,6 +220,7 @@
       </main>
       <footer class="footer-cec">
          <div class="container-fluid">
+
             <span class="text-muted pull-right">Desenvolvido por Claudio Alexssandro Lino.</span>
          </div>
       </footer>
@@ -245,6 +230,19 @@
       <script src="assets/lib/popper.js/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
       <script src="assets/lib/bootstrap/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
       <script src="assets/lib/angular/angular.min.js" ></script>
+      <script src="assets/lib/angular/ngStorage.min.js" ></script>
+
+      <script src="app/app.js" ></script>
+      <script src="app/modules/cec-contact/cecContactApp.js" ></script>
+      <script src="app/modules/cec-contact/lang/cecLoadLang.js" ></script>
+      
+      <script src="app/modules/cec-contact/components/cecTableContact.js" ></script>
+      <script src="app/modules/cec-contact/services/cecContactApiFactory.js" ></script>
+      <script src="app/modules/cec-contact/services/cecContactLoadFactory.js" ></script>
+      <script src="app/modules/cec-contact/controllers/cecTableContactController.js" ></script>
+      <script src="app/modules/cec-contact/controllers/cecMainController.js" ></script>
+
+  
 
 
    </body>
