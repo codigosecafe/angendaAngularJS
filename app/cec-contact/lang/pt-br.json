@@ -1,0 +1,28 @@
+{
+	"DESENVOLVIDO_POR":"Desenvolvido por",
+
+	"TITULO_PROJETO": "AngularJS - Agenda de contato!",
+
+	"TABELA_CONTATOS_TITULO"                 : "Lista de contatos",
+	"TABELA_CONTATOS_FORM_IMPUT_PLACEHOLDER" : "Quem você deseja encontrar?",
+	
+	"TABELA_CONTATOS_TH_NOME"   : "Nome completo",
+	"TABELA_CONTATOS_TH_EMAIL"  : "E-mail",
+	"TABELA_CONTATOS_TH_ESTADO" : "Estado",
+	"TABELA_CONTATOS_TH_ACOES"  : "Ações",
+
+
+	"PAINEL_INFO_TITULO"                 : "Painel de ações",
+	"PAINEL_INFO_TITULO_DESC"            : "Escolha uma das ações para ativar esse painel.",
+	"PAINEL_INFO_NEW_CONTACT"            : "Para incluir um novo registo clique no botão adcionar localizado na parte inferior da pagina.",
+	"PAINEL_INFO_EDIT_CONTACT"           : "Para editar ou excluir um registro utilize os botões de ação presente na tabela ao lado.",
+	"PAINEL_INFO_DESC_CARREGAR_EXEMPLOS" : "Caso prefira você pode carregar alguns registros de exemplo.",
+	"PAINEL_INFO_BTN_CARREGAR_EXEMPLOS"  : "<i class='fa fa-tasks' aria-hidden='true'></i>&nbsp;Carregar registro de exemplo.",
+
+	"NOTIFICA_SUCESSO_CARREGAMENTO_CONTATO_TITULO" : "Deu certo, ufa!",
+	"NOTIFICA_SUCESSO_CARREGAMENTO_CONTATO_TEXTO"  : "Carremanto dos dados de exemplo realizado com sucesso.",
+
+	"NOTIFICA_ERRO_CARREGAMENTO_CONTATO_TITULO" : "Oppss, descula!",
+	"NOTIFICA_ERRO_CARREGAMENTO_CONTATO_TEXTO"  : "Algo deu errado na hora de carregar os exemplos."
+}
+

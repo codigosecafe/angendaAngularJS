@@ -1,0 +1,17 @@
+{
+	"TITULO_PROJETO": "AngularJS - Contact Schedule!",
+
+	"TABELA_CONTATOS_TITULO"                 : "Contact list",
+	"TABELA_CONTATOS_FORM_IMPUT_PLACEHOLDER" : "Who do you want to meet?",
+	
+	"TABELA_CONTATOS_TH_NOME"   : "Full name",
+	"TABELA_CONTATOS_TH_EMAIL"  : "E-mail",
+	"TABELA_CONTATOS_TH_ESTADO" : "State",
+	"TABELA_CONTATOS_TH_ACOES"  : "Actions",
+
+
+	"PAINEL_INFO_TITULO":"Action panel",
+	"PAINEL_INFO_TITULO_DESC": "Choose one of the actions to activate this panel."
+
+
+}

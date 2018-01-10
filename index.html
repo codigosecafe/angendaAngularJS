@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" ng-app="agendaApp">
+<html lang="pt-br" ng-app="cecContactApp">
    <head>
       <title>AngularJs - Agenda de contato | Claudio Alexssandro Lino</title>
       <!-- Required meta tags -->
@@ -8,12 +8,15 @@
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
       <link rel="stylesheet" href="assets/lib/font-awesome-4.7.0/css/font-awesome.min.css">
+
+      <link rel="stylesheet" href="assets/lib/pnotify-master/pnotify.css">
+      <link rel="stylesheet" href="assets/lib/pnotify-master/pnotify.buttons.css">
       <link rel="stylesheet" href="assets/css/style.css">
       
    </head>
    <body ng-controller="cecMainController as vmMain">
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-blue">
-         <a class="navbar-brand" href="javascript:void(0)" id="menu-toggle">{{vmMain.translate.TITULO_PROJETO}}</a>
+         <a class="navbar-brand" href="javascript:void(0)" id="menu-toggle" cec-text='TITULO_PROJETO'></a>
       </nav>
       <main id="container-main" class="container-fluid">
          <div class="row">
@@ -22,19 +25,14 @@
                   <article id="tbl-lista " class="col-md-12">
                      <div class="card">
                         <div class="card-header">
-                           <h2>Lista de contatos</h2>
+                           <h2 cec-text='TABELA_CONTATOS_TITULO'></h2>
                         </div>
                         <div class="card-body">
                            
                            
-                           <cec-table-contact  contacts='vm.listContact' >
+                           <cec-table-contact  contacts='listContact' >
 
-                              <button type="button" class="btn btn-info text-center">
-                                <i class="fa fa-pencil" aria-hidden="true"></i>
-                             </button>
-                             <button type="button" class="btn btn-secondary text-center">
-                                <i class="fa fa-trash" aria-hidden="true"></i>
-                              </button>
+                              
 
                            </cec-table-contact>
 
@@ -76,35 +74,36 @@
                </div>
             </div>
             <!-- ### Final da div conteudo-esquesdo ### -->
-            <div id="conteudo-direito" class="col-md-4">
+            <div id="conteudo-direito" class="col-md-4" ng-controller="cecActionPanelController as vm">
                <!-- PAINEL DEFAULT -->
-               <div class="row" >
+               <div class="row" ng-show="activePanelInfo">
                   <div id="" class="col-md-12">
                      <div class="card">
-                        <div class="card-header">
-                           Painel de ações
-                        </div>
+                        <div class="card-header" cec-text='PAINEL_INFO_TITULO'></div>
                         <div class="card-body">
-                           <h4 class="card-title">Escolha uma das ações para ativar esse painel.</h4>
+                           <h4 class="card-title" cec-text="PAINEL_INFO_TITULO_DESC"></h4>
                            <p class="card-text"></p>
                            <table class="table ">
                               <tbody>
                                  <tr>
-                                    <td>Para incluir um novo registo clique no botão adcionar localizado na parte inferior da pagina</td>
+                                    <td cec-text="PAINEL_INFO_NEW_CONTACT"></td>
                                     <td><img src="assets/images/add.png" alt=""></td>
                                  </tr>
                                  <tr>
-                                    <td>Para editar ou excluir um registro utilize os botões de ação presente na tabela ao lado</td>
+                                    <td cec-text="PAINEL_INFO_EDIT_CONTACT"></td>
                                     <td><img src="assets/images/edit-trash.png" alt=""></td>
                                  </tr>
                               </tbody>
                            </table>
                            <br>
+                           <div ng-if="listContact.length <= 0">
+                              
                            <hr>
-                           <p>Caso prefira você pode carregar alguns registros de exemplo</p>
-                           <button class="btn btn-block btn-info"  type="button">
-                           Carregar registro de exemplo
+                           <p cec-text="PAINEL_INFO_DESC_CARREGAR_EXEMPLOS"></p>
+                           <button class="btn btn-block btn-info"  type="button" ng-click="vm.loadListContact()" cec-text="PAINEL_INFO_BTN_CARREGAR_EXEMPLOS">
+                                 
                            </button>
+                           </div>
                         </div>
                      </div>
                   </div>
@@ -112,7 +111,7 @@
                </div>
                <!-- / PAINEL DEFAULT -->
                <!-- PAINEL ADCIONA REGISTRO -->
-               <div class="row" >
+               <div class="row" ng-show="activePanelNewContact">
                   <div id="" class="col-md-12">
                      <div class="card">
                         <div class="card-header">
@@ -161,7 +160,7 @@
                </div>
                <!-- / PAINEL ADCIONA REGISTRO -->
                <!-- PAINEL EDITAR REGISTRO -->
-               <div class="row" >
+               <div class="row" ng-show="activePanelEditContact">
                   <div id="" class="col-md-12">
                      <div class="card">
                         <div class="card-header">
@@ -210,7 +209,7 @@
                   <!-- ### Final da div  ### -->
                </div>
                <!-- / PAINEL EDITAR REGISTRO -->
-               <button class="fixed-button wobble rounded-circle align-middle" type="button" >
+               <button class="fixed-button wobble rounded-circle align-middle" type="button" ng-click="vm.showAddRegister()">
                   <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
                </button>
             </div>
@@ -221,7 +220,7 @@
       <footer class="footer-cec">
          <div class="container-fluid">
 
-            <span class="text-muted pull-right">Desenvolvido por Claudio Alexssandro Lino.</span>
+            <span class="text-muted pull-right"><span cec-text="DESENVOLVIDO_POR"></span> Claudio Alexssandro Lino.</span>
          </div>
       </footer>
       
@@ -229,19 +228,41 @@
       <script src="assets/lib/jquery/jquery-3.2.1.min.js" ></script>
       <script src="assets/lib/popper.js/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
       <script src="assets/lib/bootstrap/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+      
+      <script src="assets/lib/pnotify-master/pnotify.js"></script>
+      <script src="assets/lib/pnotify-master/pnotify.confirm.js"></script>
+      <script src="assets/lib/pnotify-master/pnotify.buttons.js"></script>
+
       <script src="assets/lib/angular/angular.min.js" ></script>
       <script src="assets/lib/angular/ngStorage.min.js" ></script>
 
-      <script src="app/app.js" ></script>
-      <script src="app/modules/cec-contact/cecContactApp.js" ></script>
-      <script src="app/modules/cec-contact/lang/cecLoadLang.js" ></script>
-      
-      <script src="app/modules/cec-contact/components/cecTableContact.js" ></script>
-      <script src="app/modules/cec-contact/services/cecContactApiFactory.js" ></script>
-      <script src="app/modules/cec-contact/services/cecContactLoadFactory.js" ></script>
-      <script src="app/modules/cec-contact/controllers/cecTableContactController.js" ></script>
-      <script src="app/modules/cec-contact/controllers/cecMainController.js" ></script>
 
+      
+
+
+      <script src="assets/lib/angular/angular-pnotify.js" ></script>
+
+
+      <script src="app/cec-contact/cecContactApp.js" ></script>
+      <script src="app/cec-contact/lang/cecLoadLang.js" ></script>
+      
+      <script src="app/cec-contact/directives/cec-text.js" ></script>
+      <script src="app/cec-contact/directives/cec-placeholder.js" ></script>
+      
+      <script src="app/cec-contact/components/cecTableContact.js" ></script>
+      
+      <script src="app/cec-contact/services/cecContactApiFactory.js" ></script>
+      <script src="app/cec-contact/services/cecContactLoadFactory.js" ></script>
+      
+      <script src="app/cec-contact/controllers/cecMainController.js" ></script>
+      <script src="app/cec-contact/controllers/cecTableContactController.js" ></script>
+      <script src="app/cec-contact/controllers/cecActionPanelController.js" ></script>
+
+
+      <script>
+         PNotify.prototype.options.styling = "bootstrap3";
+      </script>
   
 
 
