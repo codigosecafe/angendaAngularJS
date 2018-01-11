@@ -11,7 +11,7 @@
 	function cecMainController($rootScope) {
 		var parent = $rootScope;
 		var vm = this;
-
+		parent.teste = 'selecione';
         // *** FUNÇOES
 
 		// INICIANDO AS FUNÇÕES

@@ -19,6 +19,14 @@
 	"PAINEL_INFO_DESC_CARREGAR_EXEMPLOS" : "Caso prefira você pode carregar alguns registros de exemplo.",
 	"PAINEL_INFO_BTN_CARREGAR_EXEMPLOS"  : "<i class='fa fa-tasks' aria-hidden='true'></i>&nbsp;Carregar registro de exemplo.",
 
+	"PAINEL_ADCIONAR_CONTATO_TITULO"           : "Preencha os campos abaixo para adcionar novo registro.",
+	"PAINEL_ADCIONAR_CONTATO_PLACEHOLDER_NOME" : "Nome completo",
+	"PAINEL_ADCIONAR_CONTATO_PLACEHOLDER_EMAIL" : "Endereço eletronico (E-mail)",
+	"PAINEL_ADCIONAR_CONTATO_BTN_CANCELAR" : "Cancelar",
+	"PAINEL_ADCIONAR_CONTATO_BTN_SALVAR" : "<i class='fa fa-floppy-o' aria-hidden='true'></i>&nbsp;Salvar registro",
+	
+	"PAINEL_COMBO_ESTADO_SELECIONE" : "Selecione um estado",
+
 	"NOTIFICA_SUCESSO_CARREGAMENTO_CONTATO_TITULO" : "Deu certo, ufa!",
 	"NOTIFICA_SUCESSO_CARREGAMENTO_CONTATO_TEXTO"  : "Carremanto dos dados de exemplo realizado com sucesso.",
 
