@@ -41,12 +41,12 @@ Diretiva **cec-text**
             </button>
          </div>
          <div class="modal-body">
-            <p class="text-center" cec-text="TABELA_CONTATOS_MODAL_DETLETAR_TEXTO_CONFIRMACAO"></p>
+            <p class="text-center" cec-text="TABELA_CONTATOS_MODAL_DELETAR_TEXTO_CONFIRMACAO"></p>
             <h4 class="text-center"> {{ recordNameDelete }} </h4>
          </div>
          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal" cec-text="TABELA_CONTATOS_MODAL_DETLETAR_BTN_CANCELAR"></button>
-            <button type="button" class="btn btn-primary" cec-text="TABELA_CONTATOS_MODAL_DETLETAR_BTN_SIM" ng-click="confirmDeleteRecord()"></button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" cec-text="TABELA_CONTATOS_MODAL_DELETAR_BTN_CANCELAR"></button>
+            <button type="button" class="btn btn-primary" cec-text="TABELA_CONTATOS_MODAL_DELETAR_BTN_SIM" ng-click="confirmDeleteRecord()"></button>
          </div>
       </div>
    </div>

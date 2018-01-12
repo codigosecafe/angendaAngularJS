@@ -15,9 +15,9 @@
 	"TABELA_CONTATOS_NOTIFICA_DELETE_SUCESSO"  : "Conactus was successfully excluded!!!",
 	
 	"TABELA_CONTATOS_MODAL_DELETAR_TITLE"  : "Delete record",
-	"TABELA_CONTATOS_MODAL_DETLETAR_TEXTO_CONFIRMACAO"  : "Are you sure you want to delete this regitt? ",
-	"TABELA_CONTATOS_MODAL_DETLETAR_BTN_CANCELAR"  : "Cancel",
-	"TABELA_CONTATOS_MODAL_DETLETAR_BTN_SIM"  : "Yes, I know what I'm doing!",
+	"TABELA_CONTATOS_MODAL_DELETAR_TEXTO_CONFIRMACAO"  : "Are you sure you want to delete this regitt? ",
+	"TABELA_CONTATOS_MODAL_DELETAR_BTN_CANCELAR"  : "Cancel",
+	"TABELA_CONTATOS_MODAL_DELETAR_BTN_SIM"  : "Yes, I know what I'm doing!",
 
 
 	"PAINEL_INFO_TITULO"                 : "Dashboard",

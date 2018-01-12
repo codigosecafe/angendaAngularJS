@@ -15,9 +15,9 @@
 	"TABELA_CONTATOS_NOTIFICA_DELETE_SUCESSO" : "O contato foi excluído com sucesso!!!",
 	
 	"TABELA_CONTATOS_MODAL_DELETAR_TITLE"              : "Deletar registro",
-	"TABELA_CONTATOS_MODAL_DETLETAR_TEXTO_CONFIRMACAO" : "Tem certeza que deseja excluir esse registro? ",
-	"TABELA_CONTATOS_MODAL_DETLETAR_BTN_CANCELAR"      : "Cancelar",
-	"TABELA_CONTATOS_MODAL_DETLETAR_BTN_SIM"           : "Sim, eu sei que estou fazendo!",
+	"TABELA_CONTATOS_MODAL_DELETAR_TEXTO_CONFIRMACAO" : "Tem certeza que deseja excluir esse registro? ",
+	"TABELA_CONTATOS_MODAL_DELETAR_BTN_CANCELAR"      : "Cancelar",
+	"TABELA_CONTATOS_MODAL_DELETAR_BTN_SIM"           : "Sim, eu sei que estou fazendo!",
 
 
 	"PAINEL_INFO_TITULO"                 : "Painel de instruções",
