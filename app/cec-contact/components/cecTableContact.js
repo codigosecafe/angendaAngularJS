@@ -1,4 +1,4 @@
-(function() {
+(function () {
     'use strict';
 
     angular
@@ -8,33 +8,27 @@
             controller: cecTableContactComponentController,
             bindings: {
                 contacts: '<'
-
             },
             transclude: false
-
         });
 
-   cecTableContactComponentController.$inject = ['$rootScope'];
+    cecTableContactComponentController.$inject = ['$rootScope'];
 
     /* @ngInject */
     function cecTableContactComponentController($rootScope) {
-    	var parent = $rootScope;
+        var parent = $rootScope;
         var vm = this;
-        
-        vm.showEditRegister = function(index){
-            parent.showEditRegister(index);
+
+        vm.showEditRecord = function (index) {
+            parent.showEditRecord(index);
         }
-        vm.deleteRegister = function (contact){
-            parent.deleteRegister(contact);
+        vm.deleteRecord = function (contact) {
+            parent.deleteRecord(contact);
         }
 
-
-        vm.orderNow = function(field) {
+        vm.orderNow = function (field) {
             vm.sortByfield = field;
             vm.orderDirection = !vm.orderDirection;
         }
     }
 })();
-
-
-

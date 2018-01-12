@@ -1,4 +1,4 @@
-(function() {
+(function () {
 	'use strict';
 
 	angular
@@ -9,10 +9,7 @@
 
 	/* @ngInject */
 	function cecText($rootScope, cecLoadLang, $localStorage, $sessionStorage, $window) {
-		// Usage:
-		//
-		// Creates:
-		//
+
 		var directive = {
 			link: link,
 			restrict: 'A',
@@ -29,10 +26,10 @@
 						//- Carrego a tradução dos textos
 						var lang = load_translate;
 						$localStorage.translate = lang;
-
 						vm.lang = angular.fromJson(lang);
 						if (parent.lang == undefined) {
 							parent.lang = vm.lang;
+
 						}
 						element[0].innerHTML = vm.lang[attrs.cecText];
 					});
@@ -40,8 +37,8 @@
 				vm.lang = angular.fromJson($localStorage.translate);
 				if (parent.lang == undefined) {
 					parent.lang = vm.lang;
-				}
 
+				}
 				element[0].innerHTML = vm.lang[attrs.cecText];
 			}
 		}

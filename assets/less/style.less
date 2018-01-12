@@ -1,6 +1,9 @@
 @import (reference) "color.less";
 @import (reference) "functions.less";
 
+button{
+  cursor: pointer;
+}
 
 .bg-blue {
   background: @azul;
@@ -13,6 +16,7 @@
   }
 
   #conteudo-esquerdo {
+    overflow: hidden;
     .top_padding();
 
     .hover_order {
@@ -31,6 +35,7 @@
     border-left: 1px solid rgba(0, 0, 0, 0.12);
     background-color: rgba(0, 0, 0, 0.08);
     min-height: 87vh;
+    overflow: hidden;
 
     .card {
       img {

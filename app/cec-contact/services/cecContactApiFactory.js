@@ -17,7 +17,6 @@
 				}
 				this.list = list;
 				return list;
-
 			}
 		};
 		return service;

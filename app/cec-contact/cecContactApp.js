@@ -1,2 +1,1 @@
-angular.module('cecContactApp', ["ngStorage", 'jlareau.pnotify'])
-	.filter('unsafe', function($sce) { return $sce.trustAsHtml; });
+angular.module('cecContactApp', ["ngRoute","ngStorage", 'jlareau.pnotify']);
