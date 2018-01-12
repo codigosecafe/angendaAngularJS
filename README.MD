@@ -59,7 +59,7 @@ A tradução inicial de basea pelo atributo lang na tag HTML
 ```
 Mas pode ser alterada, ainda não criei uma ação para isso na agenda mas pode ser alterada através do LocalStorage na aba Application no inspetor de elemento.
 
-Basta procurar pela key **ngStorage-lang** e alterar o seu valor de **"pt-br"** para **"en"**
+Basta procurar pela key **ngStorage-lang** e alterar o seu valor de **"pt-br"** para **"en"** e apagar a key **ngStorage-translate**
 
 
 
