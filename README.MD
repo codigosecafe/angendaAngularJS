@@ -27,7 +27,7 @@ Acabei usando alguns recursos que acredito ser bem útil quando se pensa em um p
 
 Diretiva **cec-text**
 ---
-```javascript
+```html
 <div class="modal fade" id="modalDeleteRecord" tabindex="-1" role="dialog" aria-labelledby="modalDeleteRecordLabel" aria-hidden="true">
    <div class="modal-dialog" role="document">
       <div class="modal-content">
