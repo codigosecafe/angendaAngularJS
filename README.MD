@@ -26,7 +26,7 @@ Busquei usar alguns dos principais recursos do angularJS@1.6.6, no desenvolvimen
 - https://angularjs.org/
 - https://github.com/gsklee/ngStorage
 
-Acabei usando alguns recursos que acredito ser bem útil quando se pensa em um projeto que possa ser utilizado por qualquer pessoa, e um desses recursos é todo o conteúdo de estático de texto, vir de um arquivo json, assim facilitando caso queira mudar o idioma do projeto, a maioria das traduções feita no HTML, são feitas por DIRETIVAS, um exemplo do uso:
+Acabei usando alguns recursos que acredito ser bem útei, e um desses recursos é todo o conteúdo de texto estático, vir de um arquivo json, assim facilitando caso queira mudar o idioma do projeto, a maioria das traduções feita no HTML, são feitas por DIRETIVAS, um exemplo do uso:
 
 Diretiva **cec-text**
 ---
