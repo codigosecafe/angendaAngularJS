@@ -1,7 +1,7 @@
 
 # Claudio Alexssandro Lino
 
->Sou Full Stack Developer gosto de atuar em todas as fazes dos projetos, desde a criação do wireframe, configuração do servidor, pranejamento das historias atráves dos metódos agéis, codificação do backend e frontend. 
+>Sou Full Stack Developer gosto de atuar em todas as fazes dos projetos, desde a criação do wireframe, configuração do servidor, planejamento das historias através dos métodos ágeis, codificação do backend e frontend. 
 >
 >Tenho experiência no frameworks Laravel (4 anos). Exerci varias funções dentro da minha profissão que qualificou a ser um Full Stack Developer , executei vários trabalhos como Web Design, Ilustrador WEB, Gerente de Media Social, Consultor SEO voltado para estrutura HTML, Desenvolvimento back-end para aplicações Web e Desktop, configuração e manutenção de servidores web baseado em linux. 
 >
@@ -52,7 +52,15 @@ Diretiva **cec-text**
    </div>
 </div>
 ```
-Esse é apenas um exemplo dos recursos utilizado nesse projeto.
+Esse é apenas um exemplo dos recursos utilizado nesse projeto. 
+A tradução inicial de basea pelo atributo lang na tag HTML
+```html
+<html lang="pt-br">
+```
+Mas pode ser alterada, ainda não criei uma ação para isso na agenda mas pode ser alterada através do LocalStorage na aba Application no inspetor de elemento.
+
+Basta procurar pela key **ngStorage-lang** e alterar o seu valor de **"pt-br"** para **"en"**
+
 
 
 

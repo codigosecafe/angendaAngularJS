@@ -31,7 +31,7 @@
 			_reset();
 		}
 
-		/* PAINEL ADCIONAR REGISTRO */
+		/* PAINEL ADICIONAR REGISTRO */
 		vm.showAddRecord = function () {
 			parent.activePanelInfo        = false;
 			parent.activePanelNewContact  = true;
@@ -52,14 +52,14 @@
 
 				if (parent.listContact.length > 0) {
 					$localStorage.listContact = parent.listContact;
-					notificationService.success(parent.lang.PAINEL_ADCIONAR_NOVO_CONTATO_NOTIFICA_SUCESSO_TEXTO);
+					notificationService.success(parent.lang.PAINEL_ADICIONAR_NOVO_CONTATO_NOTIFICA_SUCESSO_TEXTO);
 				} else {
-					notificationService.error(parent.lang.PAINEL_ADCIONAR_NOVO_CONTATO_NOTIFICA_ERRO_TEXTO);
+					notificationService.error(parent.lang.PAINEL_ADICIONAR_NOVO_CONTATO_NOTIFICA_ERRO_TEXTO);
 				}
 
 				_reset();
 			} else {
-				notificationService.error(parent.lang.PAINEL_ADCIONAR_NOVO_CONTATO_NOTIFICA_ERRO_PREENCHER_TEXTO);
+				notificationService.error(parent.lang.PAINEL_ADICIONAR_NOVO_CONTATO_NOTIFICA_ERRO_PREENCHER_TEXTO);
 			}
 		}
 		
@@ -121,18 +121,18 @@
 
 						parent.listContact = list;
 						notificationService.notify({
-							title        : parent.lang.PAINEL_ADCIONAR_CONTATO_NOTIFICA_SUCESSO_TITULO,
+							title        : parent.lang.PAINEL_ADICIONAR_CONTATO_NOTIFICA_SUCESSO_TITULO,
 							title_escape : false,
-							text         : parent.lang.PAINEL_ADCIONAR_CONTATO_NOTIFICA_SUCESSO_TEXTO,
+							text         : parent.lang.PAINEL_ADICIONAR_CONTATO_NOTIFICA_SUCESSO_TEXTO,
 							text_escape  : false,
 							type         : "success",
 							icon         : 'fa fa-smile-o fa-2x'
 						});
 					} else {
 						notificationService.notify({
-							title        : parent.lang.PAINEL_ADCIONAR_CONTATO_NOTIFICA_ERRO_TITULO,
+							title        : parent.lang.PAINEL_ADICIONAR_CONTATO_NOTIFICA_ERRO_TITULO,
 							title_escape : false,
-							text         : parent.lang.PAINEL_ADCIONAR_CONTATO_NOTIFICA_ERRO_TEXTO,
+							text         : parent.lang.PAINEL_ADICIONAR_CONTATO_NOTIFICA_ERRO_TEXTO,
 							text_escape  : false,
 							type         : "error"
 						});
