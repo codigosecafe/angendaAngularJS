@@ -13,8 +13,11 @@
 Uma agenda simples de contato, aonde é possível cadastrar, editar e deletar um registro.
 Resolvi criar esse projeto para mostrar um pouco do conhecimento em **AngularJS**. Com o tempo irei aprimorar e criar novos recursos para esse projeto.
 
-Você pode testar esse projeto acessando a seguinte URL: 
+Você pode testar esse projeto acessando nas seguintes links: 
+
 http://codigosecafe.com.br/agenda/
+https://codigosecafe.github.io/angendaAngularJS/
+
 ### Sobre o desenvolvimento:
 Busquei usar alguns dos principais recursos do angularJS@1.6.6, no desenvolvimento. Também utilizei os seguintes recursos para uma melhor apresentação do Front-end.
 
