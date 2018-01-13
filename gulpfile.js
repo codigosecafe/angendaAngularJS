@@ -9,7 +9,7 @@ gulp.task('sass', () =>
 );
 
 gulp.task('watch',['sass'], function() {
-    // content
+    gulp.watch('src/assets/sass/**/*.sass',['sass']);
 });
 
 

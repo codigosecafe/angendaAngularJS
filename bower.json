@@ -24,6 +24,7 @@
     "animate.css": "^3.5.2",
     "font-awesome": "^4.7.0",
     "pnotify": "^3.2.1",
-    "popper.js": "^1.12.9"
+    "popper.js": "^1.12.9",
+    "angular-pnotify": "^0.1.2"
   }
 }
