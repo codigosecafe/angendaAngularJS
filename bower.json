@@ -16,6 +16,14 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "v4",
+    "jquery": "^3.2.1",
+    "angular": "angularjs#^1.6.8",
+    "angular-route": "^1.6.8",
+    "ngstorage": "^0.3.11",
+    "animate.css": "^3.5.2",
+    "font-awesome": "^4.7.0",
+    "pnotify": "^3.2.1",
+    "popper.js": "^1.12.9"
   }
 }
