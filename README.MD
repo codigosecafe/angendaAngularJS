@@ -16,6 +16,7 @@ Resolvi criar esse projeto para mostrar um pouco do conhecimento em **AngularJS*
 Você pode testar esse projeto acessando nas seguintes links: 
 
 http://codigosecafe.com.br/agenda/
+
 https://codigosecafe.github.io/angendaAngularJS/
 
 ### Sobre o desenvolvimento:
