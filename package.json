@@ -1,0 +1,24 @@
+{
+  "name": "angendaangularjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://codigosecafe@github.com/codigosecafe/angendaAngularJS.git"
+  },
+  "author": "Claudio Alexssandro Lino <codigosecafe@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codigosecafe/angendaAngularJS/issues"
+  },
+  "homepage": "https://github.com/codigosecafe/angendaAngularJS#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-ruby-sass": "^3.0.0",
+    "gulp-watch": "^5.0.0"
+  }
+}
