@@ -1,6 +1,7 @@
 ATENÇÃO
 ---
-O Projeto esta passando por melhorias
+O Projeto esta passando por melhorias pode conferir na branch de Desv
+- https://github.com/codigosecafe/angendaAngularJS/tree/DESV
 
 
 
