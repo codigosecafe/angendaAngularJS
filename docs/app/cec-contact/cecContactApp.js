@@ -1,1 +1,0 @@
-angular.module('cecContactApp', ["ngRoute","ngStorage", 'jlareau.pnotify']);
