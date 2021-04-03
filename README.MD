@@ -1,16 +1,7 @@
-# Claudio Alexssandro Lino
-
->Sou Full Stack Developer gosto de atuar em todas as fazes dos projetos, desde a criação do wireframe, configuração do servidor, planejamento das historias através dos métodos ágeis, codificação do backend e frontend. 
->
->Tenho experiência no frameworks Laravel (4 anos). Exerci varias funções dentro da minha profissão que qualificou a ser um Full Stack Developer , executei vários trabalhos como Web Design, Ilustrador WEB, Gerente de Media Social, Consultor SEO voltado para estrutura HTML, Desenvolvimento back-end para aplicações Web e Desktop, configuração e manutenção de servidores web baseado em linux. 
->
-
->Especializações: PHP, AngularJS, MySQL, PostgreSQL, MariaDB, Framework PHP Laravel, Intel® XDK, Ionic, Smarty Template - Blade Template - Bootstrap - Framework PHP CodeIgniter, Wordpress, Linux, Java Script, Jquery junto com Ajax, GIT e Vagrant.
-
 ## Sobre esse projeto
 
 Uma agenda simples de contato, aonde é possível cadastrar, editar e deletar um registro.
-Resolvi criar esse projeto para mostrar um pouco do conhecimento em **AngularJS**. Com o tempo irei aprimorar e criar novos recursos para esse projeto.
+Resolvi criar esse projeto para mostrar um pouco do conhecimento em **AngularJS**.
 
 Você pode testar esse projeto acessando nas seguintes links: 
 
