@@ -12,7 +12,7 @@
 		var parent = $rootScope;
 		var vm     = this;
 		
-		vm.lang = undefined;
+		vm.lang = $localStorage.lang || undefined;
 		
 		return {
 			get url() {
@@ -20,7 +20,7 @@
 			},
 			load_translate: function(lang) {
 				var parent = $rootScope;
-				debugger;
+	
 				if($localStorage.lang != undefined){
 					var idioma = $localStorage.lang;
 				}else{
