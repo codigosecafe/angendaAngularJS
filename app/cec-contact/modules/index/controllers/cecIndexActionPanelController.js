@@ -39,6 +39,11 @@
 		}
 
 		vm.addRecord = function (newRecord) {
+
+			if(!parent.listContact.length){
+				_reset();
+			}
+
 			if (newRecord.name != undefined && newRecord.email != undefined && newRecord.state != undefined) {
 				debugger;
 				if (parent.listContact[0].name == undefined) {
