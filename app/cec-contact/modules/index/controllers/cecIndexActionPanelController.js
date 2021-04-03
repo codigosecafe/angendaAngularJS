@@ -40,6 +40,7 @@
 
 		vm.addRecord = function (newRecord) {
 			if (newRecord.name != undefined && newRecord.email != undefined && newRecord.state != undefined) {
+				debugger;
 				if (parent.listContact[0].name == undefined) {
 
 					parent.listContact[0].name  = newRecord.name;
