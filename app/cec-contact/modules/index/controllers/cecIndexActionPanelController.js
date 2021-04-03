@@ -44,14 +44,9 @@
 				debugger;
 				if(!parent.listContact.length){
 					_reset();
-
-					parent.listContact[0].name  = newRecord.name;
-					parent.listContact[0].email = newRecord.email;
-					parent.listContact[0].state = newRecord.state;
-
-				} else {
-					parent.listContact.push(angular.copy(newRecord));
-				}
+				} 
+				parent.listContact.push(angular.copy(newRecord));
+				
 
 				if (parent.listContact.length > 0) {
 					$localStorage.listContact = parent.listContact;
