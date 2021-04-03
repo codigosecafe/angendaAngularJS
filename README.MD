@@ -50,10 +50,12 @@ A tradução inicial de basea pelo atributo lang na tag HTML
 ```html
 <html lang="pt-br">
 ```
-Mas pode ser alterada, ainda não criei uma ação para isso na agenda mas pode ser alterada através do LocalStorage na aba Application no inspetor de elemento.
+Mas pode ser alterada, ainda não criei uma ação para isso. mas pode ser alterada através do LocalStorage na aba Application do inspetor de elemento.
 
 Basta procurar pela key **ngStorage-lang** e alterar o seu valor de **"pt-br"** para **"en"** e apagar a key **ngStorage-translate**
+e realizar um reload.
 
+Obs.: Não compensa eu criar essa ação no momento o angularJS@1.6.6 não mais atrativo como antes e já faz mais de 3 anos que criei esse projeto, só resolvi corregir algumas coisas para que o projeto continue rodando.
 
 
 
