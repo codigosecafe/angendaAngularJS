@@ -15,7 +15,7 @@ Resolvi criar esse projeto para mostrar um pouco do conhecimento em **AngularJS*
 Você pode testar esse projeto acessando nas seguintes links: 
 
 
-- https://cecdev.github.io/angendaAngularJS/
+- https://codigosecafe.github.io/angendaAngularJS/
 
 ### Sobre o desenvolvimento:
 Busquei usar alguns dos principais recursos do angularJS@1.6.6, no desenvolvimento. Também utilizei os seguintes recursos para uma melhor apresentação do Front-end.
