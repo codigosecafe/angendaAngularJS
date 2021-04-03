@@ -19,7 +19,7 @@
         function link(scope, element, attrs) {
             var vm = scope;
             if ($localStorage.translate == undefined) {
-                cecLoadLang.load_translate(document.documentElement.lang)
+                cecLoadLang.load_translate($localStorage.lang || document.documentElement.lang)
                     .then(load_translate => {
                         
                         //- Carrego a tradução dos textos
